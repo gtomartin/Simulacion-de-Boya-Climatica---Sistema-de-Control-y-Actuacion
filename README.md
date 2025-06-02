@@ -122,6 +122,6 @@ boya-climatica/
 ├── esquema.png                    # Captura del circuito desde Wokwi
 ├── diagram.json                   # Diagrama de componentes y conexionado
 ├── diagrama de funcionamiento.png # Diagrama de funcioamiento
-├── capturas simulación            # Capturas de la información mostrada en el LCD
+├── capturas simulación.rar        # Capturas de la información mostrada en el LCD
 └── LICENSE                        # Licencia de uso
 ```
