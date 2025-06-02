@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "author": "Ridho af Fathir",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 6.6, "left": -237.2, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 240.6, "left": -240.6, "attrs": {} },
+    { "type": "wokwi-lcd2004", "id": "lcd1", "top": -212.84, "left": -204.8, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -106.9, "left": 153.4, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -66.9,
+      "left": 273,
+      "attrs": { "temperature": "42.6", "humidity": "62.5" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 99.2,
+      "left": 125.6,
+      "attrs": {}
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 92.4, "left": 359, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 177.6,
+      "left": 354.65,
+      "rotate": 90,
+      "attrs": { "value": "330" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": 296.3, "left": 191.8, "attrs": {} },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": -103,
+      "left": -509.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -3.6,
+      "left": -399.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 81.6,
+      "left": -403.75,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot3", "top": 526.7, "left": -153.8, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot4", "top": 526.7, "left": -29, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": 547.2,
+      "left": 57.6,
+      "attrs": {
+        "text": "Potenciómetros que simulan \nla lectura de la velocidad y \ndirección del viento"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": 307.2,
+      "left": 268.8,
+      "attrs": { "text": "Potenciómetro que simula \nla lectura de la calidad del aire" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": -201.6,
+      "left": -537.6,
+      "attrs": {
+        "text": "Sensor de temperatura (NTC) de \nla batería, activación de la \nresistencia calefactora (LED)"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text4",
+      "top": -38.4,
+      "left": 374.4,
+      "attrs": {
+        "text": "Medición de temperatura, humedad (DHT22)\ne intensidad lumínica (2 sensores LDR). Activación \nseñal lumínica de señalización con led mediante \nparpadeo y otro led con intensidad variable"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -3.6,
+      "left": -476.2,
+      "attrs": { "color": "cyan" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 81.6,
+      "left": -480.55,
+      "rotate": 90,
+      "attrs": { "value": "330" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -309.2, "left": 422.4, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr2",
+      "top": 108.8,
+      "left": 490.4,
+      "attrs": {}
+    },
+    { "type": "wokwi-servo", "id": "servo2", "top": -203.6, "left": 422.4, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": 92.4,
+      "left": 416.6,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 177.6,
+      "left": 412.25,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text5",
+      "top": -374.4,
+      "left": 345.6,
+      "attrs": {
+        "text": "Servos utilizados para ajustar la posición\nvertical y horizontal de las placas solares\nsegún datos de los sensores de luminosidad"
+      }
+    }
+  ],
+  "connections": [
+    [ "lcd1:V0", "pot1:SIG", "green", [ "v76.8", "h345.7" ] ],
+    [ "lcd1:RS", "uno:6", "green", [ "v57.6", "h0.3", "v201.6", "h101.9" ] ],
+    [ "lcd1:D4", "uno:9", "green", [ "v220.8", "h96" ] ],
+    [ "lcd1:D5", "uno:10", "green", [ "v105.6", "h-19.1", "v144", "h-0.7" ] ],
+    [ "lcd1:D6", "uno:11", "green", [ "v268.8", "h-38.8" ] ],
+    [ "lcd1:D7", "uno:12", "green", [ "v163.2", "h-57.8" ] ],
+    [ "bb1:tp.18", "pot1:VCC", "red", [ "v-38.1", "h213.6" ] ],
+    [ "lcd1:K", "bb1:tn.17", "black", [ "v9.6", "h9.6" ] ],
+    [ "bb1:tn.19", "pot1:GND", "black", [ "v-38.5", "h184" ] ],
+    [ "bb1:tp.1", "bb1:bp.1", "red", [ "v0" ] ],
+    [ "bb1:bp.25", "dht1:VCC", "red", [ "v0" ] ],
+    [ "dht1:GND", "bb1:bn.25", "black", [ "v19.2", "h-240" ] ],
+    [ "dht1:SDA", "uno:2", "gold", [ "v9.6", "h-163.1", "v19.2", "h-57.6" ] ],
+    [ "bb1:bp.21", "ldr1:VCC", "red", [ "v37.5", "h318.4", "v-115.2" ] ],
+    [ "bb1:tn.2", "bb1:bn.2", "black", [ "v0" ] ],
+    [ "uno:5V", "bb1:bp.1", "red", [ "v28.7", "h-255.4", "v-267.9" ] ],
+    [ "uno:GND.2", "bb1:bn.2", "black", [ "v38.3", "h-245.7", "v-267.5" ] ],
+    [ "ldr1:AO", "uno:A5", "gold", [ "h38.4", "v124.1", "h-240" ] ],
+    [ "led1:A", "r1:1", "green", [ "v0" ] ],
+    [ "ldr1:GND", "bb1:bn.25", "black", [ "h28.8", "v47.6", "h-9.6" ] ],
+    [ "led1:C", "bb1:bn.25", "black", [ "v0" ] ],
+    [ "ntc1:OUT", "uno:A4", "yellow", [ "h28.8", "v556.7", "h432" ] ],
+    [ "ntc1:VCC", "bb1:tp.3", "red", [ "h67.2", "v67.2", "h36.8" ] ],
+    [ "ntc1:GND", "bb1:tn.2", "black", [ "h76.8", "v57.6", "h19.2", "v48.1" ] ],
+    [ "led2:A", "r2:1", "green", [ "v0" ] ],
+    [ "uno:4", "r2:2", "yellow", [ "v-105.6", "h-351.3", "v-27.6" ] ],
+    [ "led2:C", "bb1:bn.3", "black", [ "v124.8", "h250" ] ],
+    [ "pot2:VCC", "bb1:bp.22", "red", [ "v38.4", "h-0.8" ] ],
+    [ "pot2:GND", "bb1:bn.23", "black", [ "v19.2", "h-9.6" ] ],
+    [ "pot2:SIG", "uno:A3", "yellow", [ "v96", "h-240.4" ] ],
+    [ "bb1:tp.5", "lcd1:VDD", "red", [ "v0" ] ],
+    [ "lcd1:VSS", "bb1:tn.4", "black", [ "v0" ] ],
+    [ "lcd1:A", "bb1:tp.16", "red", [ "v0" ] ],
+    [ "lcd1:E", "uno:7", "green", [ "v220.8", "h76.8" ] ],
+    [ "pot4:VCC", "pot3:VCC", "red", [ "v67.2", "h-125.6" ] ],
+    [ "pot3:GND", "pot4:GND", "black", [ "v57.6", "h124.8" ] ],
+    [ "pot3:GND", "bb1:bn.1", "black", [ "v9.6", "h-259.2", "v-422.4" ] ],
+    [ "pot3:VCC", "bb1:bp.1", "red", [ "v28.8", "h-298.4", "v-451.2" ] ],
+    [ "pot4:SIG", "uno:A2", "gold", [ "v38.4", "h-58", "v-134.4", "h38.4" ] ],
+    [ "pot3:SIG", "uno:A1", "gold", [ "v19.2", "h57.2", "v-153.6", "h38.4" ] ],
+    [ "led3:C", "bb1:bn.3", "black", [ "v134.4", "h277.2" ] ],
+    [ "led3:A", "r3:1", "green", [ "v0" ] ],
+    [ "r3:2", "bb1:19b.i", "yellow", [ "v18", "h412.8" ] ],
+    [ "bb1:19b.i", "uno:5", "yellow", [ "v19.2", "h5.8" ] ],
+    [ "ldr2:VCC", "bb1:bp.21", "red", [ "h67.2", "v105.6", "h-633.6" ] ],
+    [ "ldr2:GND", "bb1:bn.25", "black", [ "h57.6", "v57.2" ] ],
+    [ "ldr2:AO", "uno:A0", "yellow", [ "h38.4", "v335.3", "h-662.4", "v-9.6" ] ],
+    [ "servo1:GND", "bb1:tn.25", "black", [ "h-163.2", "v288.1" ] ],
+    [ "servo2:GND", "bb1:tn.25", "black", [ "h-182.4", "v9.6" ] ],
+    [ "servo1:V+", "bb1:tp.25", "red", [ "h-172.8", "v249.7" ] ],
+    [ "servo2:V+", "bb1:tp.25", "red", [ "h-172.8", "v19.3" ] ],
+    [ "servo1:PWM", "uno:0", "gold", [ "h-76.8", "v489.8", "h-326.4" ] ],
+    [ "servo2:PWM", "uno:1", "gold", [ "h-86.4", "v413", "h-326.4", "v-9.6" ] ],
+    [ "r1:2", "uno:8", "yellow", [ "h0" ] ],
+    [ "led4:C", "bb1:bn.24", "black", [ "v105.6", "h-374", "v-37.1" ] ],
+    [ "r4:1", "led4:A", "green", [ "h0" ] ],
+    [ "r4:2", "uno:3", "yellow", [ "h0", "v56.4", "h-451.2" ] ]
+  ],
+  "dependencies": {}
+}
