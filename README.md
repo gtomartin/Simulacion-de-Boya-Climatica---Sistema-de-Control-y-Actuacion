@@ -49,7 +49,7 @@ Este sistema simulado permite comprender los fundamentos de un sistema embebido 
 Este proyecto fue desarrollado por:
 
 **Gustavo Martín Ramírez**  
-Ingeniero Técnico de Telecomunicación - desarrollador de soluciones educativas digitales.  
+Ingeniero Técnico de Telecomunicación.  
 
 ---
 
