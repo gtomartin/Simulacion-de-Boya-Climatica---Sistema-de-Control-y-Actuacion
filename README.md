@@ -118,8 +118,9 @@ void ajusteplacas()
 ```
 boya-climatica/
 ├── sim_boya.ino                  # Código fuente Arduino
-├── README.md                     # Este archivo
+├── README.md                     # Información sobre el proyecto
 ├── esquema.png                   # Captura del circuito desde Wokwi
+├── diagram.json                  # Diagrama de componentes y conexionado
 ├── capturas simulación           # Capturas de la información mostrada en el LCD
 └── LICENSE                       # Licencia de uso
 ```
