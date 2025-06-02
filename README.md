@@ -4,7 +4,7 @@ Este proyecto simula una boya meteorológica inteligente que mide y controla con
 
 ---
 
-## 🚀 ¿Qué hace este proyecto?
+##  ¿Qué hace este proyecto?
 
 - Mide temperatura, humedad, calidad del aire, viento e iluminación.
 - Controla automáticamente la temperatura del compartimento de baterías (calefacción/enfriamiento).
@@ -15,7 +15,7 @@ Este proyecto simula una boya meteorológica inteligente que mide y controla con
 
 ---
 
-## 💡 ¿Por qué es útil este proyecto?
+##  ¿Por qué es útil este proyecto?
 
 Este sistema simulado permite comprender los fundamentos de un sistema embebido de control climático:
 - Introduce al estudiante en el uso de sensores y actuadores reales.
@@ -25,7 +25,7 @@ Este sistema simulado permite comprender los fundamentos de un sistema embebido 
 
 ---
 
-## 🧰 ¿Cómo comenzar a usar el proyecto?
+##  ¿Cómo comenzar a usar el proyecto?
 
 1. Clona este repositorio o descarga los archivos ZIP.
 2. Abre `sim_boya.ino` en la plataforma de simulación [Wokwi](https://wokwi.com).
@@ -35,7 +35,7 @@ Este sistema simulado permite comprender los fundamentos de un sistema embebido 
 
 ---
 
-## 📬 ¿Dónde puedo obtener ayuda?
+##  ¿Dónde puedo obtener ayuda?
 
 - Puedes abrir una **issue** en este mismo repositorio.
 - Contactar al autor a través de [sointelca.com](https://sointelca.com).
@@ -44,7 +44,7 @@ Este sistema simulado permite comprender los fundamentos de un sistema embebido 
 
 ---
 
-## 👤 ¿Quién mantiene y contribuye?
+##  ¿Quién mantiene y contribuye?
 
 Este proyecto fue desarrollado por:
 
@@ -53,7 +53,7 @@ Ingeniero Técnico de Telecomunicación - desarrollador de soluciones educativas
 
 ---
 
-## 📘 Referencias
+##  Referencias
 
 - Cameron, N. (2019). *Arduino Applied*. Apress.
 - Elegoo (2020). *UNO Super Starter Kit Tutorial*.
@@ -63,7 +63,7 @@ Ingeniero Técnico de Telecomunicación - desarrollador de soluciones educativas
 
 ---
 
-## 🔧 Fragmentos clave del código
+##  Fragmentos clave del código
 
 ```cpp
 // Control de temperatura ON-OFF con zona muerta
