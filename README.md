@@ -120,5 +120,6 @@ boya-climatica/
 ├── sim_boya.ino                  # Código fuente Arduino
 ├── README.md                     # Este archivo
 ├── esquema.png                   # Captura del circuito desde Wokwi
+├── capturas simulación           # Capturas de la información mostrada en el LCD
 └── LICENSE                       # Licencia de uso
 ```
